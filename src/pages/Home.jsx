@@ -1,13 +1,10 @@
 import React, { useContext } from "react";
-import { AuthContext } from "../Providers/AuthProvider";
 import PhotoSlider from "../components/PhotoSlider";
 import VolunteerNeed from "../components/VolunteerNeed";
 import HeroSection from "../components/HeroSection";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const { name } = useContext(AuthContext);
-  console.log(name);
   return (
     <div>
       <PhotoSlider />
