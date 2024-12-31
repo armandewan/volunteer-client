@@ -36,7 +36,7 @@ const AddVolunteer = () => {
       name: user?.displayName,
       email: user?.email,
     };
-    const res = await axios.post("http://localhost:5000/volunteer", data);
+    const res = await axios.post(`${import.meta.env.VITE_HOST}/volunteer`, data);
     setIsLoading(false)
     if(res.status===201){
       toast.success('Volunteer Need Post Create Successfully!')
